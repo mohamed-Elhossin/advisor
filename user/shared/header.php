@@ -19,7 +19,7 @@ if (isset($_GET['logout'])) {
         <li><a class="nav-link scrollto" href="/advisor/user/#team">Team</a></li>
 
         <?php if (isset($_SESSION['admin'])) : ?>
-          <li><a class="nav-link scrollto" href="/advisor/user/posts/list.php">Courses</a></li>
+          <li><a class="nav-link scrollto" href="/advisor/user/courses/listTrack.php">Tracks</a></li>
           <li><a class="nav-link scrollto" href="/advisor/user/rating.php">Rating</a></li>
 
         <?php endif; ?>

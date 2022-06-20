@@ -21,13 +21,9 @@ include './sharedFunc/db.php';
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-7 col-md-6">
-          <div class="about-img">
-            <img height="700" src="./assets/img/p6.jpeg" alt="">
-          </div>
-        </div>
+     
 
-        <div class="col-lg-5 col-md-6">
+        <div class="col-lg-12 col-md-6">
           <div class="about-content">
             <h2>About Us</h2>
             <p>Officia, atque. Magni eaque, suscipit quod perferendis enim illo itaque excepturi. Recusandae, ipsam. Enim quis nisi similique, tempora voluptate officia fuga tenetur, magnam, odio ab eligendi at. Magnam, voluptates sed quasi nulla inventore autem numquam pariatur. At alias consectetur consequuntur cum velit eum qui. Optio qui magnam accusantium, dicta quisquam nisi porro, sequi impedit assumenda, molestiae excepturi inventore dolorum aut. Est?</p>
@@ -83,7 +79,7 @@ include './sharedFunc/db.php';
 
   <!-- ======= Why Us Section ======= -->
   <section id="why-us" class="why-us">
-    <div class="container-fluid">
+    <div class="container">
 
       <header class="section-header">
         <h3>Why choose us?</h3>
@@ -91,103 +87,19 @@ include './sharedFunc/db.php';
       </header>
 
       <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-12">
           <div class="why-us-content">
             <p>
               distinctio, necessitatibus cumque accusamus dolorum dicta exercitationem adipisci unde enim modi eveniet temporibus quam? Nulla quisquam praesentium suscipit, neque possimus repellendus incidunt totam saepe nam illo sit rem, quasi aspernatur, obcaecati laudantium accusantium! Laboriosam minus, ipsum quos numquam dolor at commodi culpa cupiditate, cum, quia beatae quam quae. Fugit impedit ex quos corporis doloremque suscipit harum itaque illum doloribus dolore voluptatum ipsam autem nihil libero atque obcaecati, iusto blanditiis neque nesciunt sint recusandae. Architecto, dolorem error. </p>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="why-us-img">
-            <img src="assets/img/p5.jpeg" alt="" class="img-fluid">
-          </div>
-        </div>
+     
 
     
       </div>
     </div>
   </section><!-- End Why Us Section -->
 
-
-
-
-  <!-- ======= Team Section ======= -->
-  <section id="team" class="team section-bg">
-    <div class="container">
-      <div class="section-header">
-        <h3>Team</h3>
-        <p>Our Team</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-2 col-md-6">
-          <div class="member">
-            <img src="assets/img/t1.jpeg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Jousif</h4>
-                <span>Customer Service</span>
- 
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <img src="assets/img/t2.jpeg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Ahmed</h4>
-                <span>public relations</span>
-   
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6">
-          <div class="member">
-            <img src="assets/img/t3.jpeg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Roshan</h4>
-                <span>Finincail acoounting</span>
-      
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6" data-aos-delay="400">
-          <div class="member">
-            <img src="assets/img/t4.jpeg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Mariam</h4>
-                <span>HR</span>
-     
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <div class="member">
-            <img src="assets/img/t5.jpeg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Mariam</h4>
-                <span>Digital marketing</span>
-    
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Team Section -->
 
 
 </main><!-- End #main -->

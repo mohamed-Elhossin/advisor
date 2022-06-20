@@ -2,8 +2,14 @@
 include '../shared/head.php';
 include '../shared/header.php';
 include '../sharedFunc/db.php';
-$select = "SELECT courses.id id,`image`, name , link , trackes.title Ttrack , levels.title tlevel FROM `courses` JOIN trackes ON courses.trackId = trackes.id JOIN levels ON courses.levelId = levels.id";
-$s = mysqli_query($conn, $select);
+
+if (isset($_GET['show'])) {
+    $id = $_GET['show'];
+    $select = "SELECT courses.id id,`image`, name , link , trackes.title Ttrack , levels.title tlevel FROM `courses` JOIN trackes ON courses.trackId = trackes.id JOIN levels ON courses.levelId = levels.id where trackes.id = $id";
+    $s = mysqli_query($conn, $select);
+}
+
+
 if (isset($_SESSION['admin'])) {
 } else {
     header("location:/advisor/user/pages-login.php");
