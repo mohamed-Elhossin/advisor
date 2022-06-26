@@ -79,19 +79,19 @@ if (isset($_GET['edit'])) {
                         <form method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label> Name : </label>
-                                <input class="form-control" value="<?php echo $name ?>" name="name" type="text">
+                                <input required class="form-control" value="<?php echo $name ?>" name="name" type="text">
                             </div>
                             <div class="form-group">
                                 <label> Link : </label>
-                                <input class="form-control" value="<?php echo $link ?>" name="link" type="text">
+                                <input required class="form-control" value="<?php echo $link ?>" name="link" type="text">
                             </div>
                             <div class="form-group">
                                 <label> Coourse Image : </label>
-                                <input class="form-control" name="image" type="file">
+                                <input required class="form-control" name="image" type="file">
                             </div>
                             <div class="form-group">
                                 <label> Tack : </label>
-                                <select class="form-control" name="trackId">
+                                <select required class="form-control" name="trackId">
                                     <?php foreach ($tracks as $data) { ?>
                                         <option value="<?php echo  $data['id'] ?>"><?php echo  $data['title'] ?></option>
                                     <?php } ?>
@@ -99,7 +99,7 @@ if (isset($_GET['edit'])) {
                             </div>
                             <div class="form-group">
                                 <label> level : </label>
-                                <select class="form-control" name="levelId">
+                                <select required class="form-control" name="levelId">
                                     <?php foreach ($levels as $data) { ?>
                                         <option value="<?php echo  $data['id'] ?>"><?php echo  $data['title'] ?></option>
                                     <?php } ?>

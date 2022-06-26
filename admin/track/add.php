@@ -59,11 +59,11 @@ if (isset($_GET['edit'])) {
                         <form method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label> Name : </label>
-                                <input class="form-control" value="<?php echo $name ?>" name="name" type="text">
+                                <input required class="form-control" value="<?php echo $name ?>" name="name" type="text">
                             </div>
                             <div class="form-group">
                                 <label> Desciption : </label>
-                                <input class="form-control" value="<?php echo $desciption ?>" name="desciption" type="text">
+                                <input required class="form-control" value="<?php echo $desciption ?>" name="desciption" type="text">
                             </div>
                             <?php if ($update) : ?>
                                 <button name="update" class="mt-4 btn btn-primary btn-block w-50 mx-auto">Update Track </button>

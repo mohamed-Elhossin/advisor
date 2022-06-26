@@ -16,7 +16,7 @@ if (isset($_GET['logout'])) {
         <li><a class="nav-link scrollto active" href="/advisor/user/#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="/advisor/user/#about">Who Are we</a></li>
         <li><a class="nav-link scrollto" href="/advisor/user/#services">Services</a></li>
-        <li><a class="nav-link scrollto" href="/advisor/user/#team">Team</a></li>
+        <li><a class="nav-link scrollto" href="/advisor/user/calendar.php">calendar</a></li>
 
         <?php if (isset($_SESSION['admin'])) : ?>
           <li><a class="nav-link scrollto" href="/advisor/user/courses/listTrack.php">Tracks</a></li>

@@ -57,7 +57,7 @@ if (isset($_GET['edit'])) {
                         <form method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label> Level : </label>
-                                <input class="form-control" value="<?php echo $name ?>" name="name" type="text">
+                                <input required class="form-control" value="<?php echo $name ?>" name="name" type="text">
                             </div>
                     
                             <?php if ($update) : ?>

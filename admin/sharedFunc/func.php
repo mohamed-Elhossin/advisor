@@ -24,3 +24,9 @@ function auth()
     }
 }
 auth();
+function path($go)
+{
+    echo "<script>
+    window.location.replace('http://localhost/advisor/user/$go')
+</script>";
+}

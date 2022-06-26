@@ -4,7 +4,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background:rgba(255, 139, 139, 0.324) ;
+  background:rgba(104, 164, 214, 0.324) ;
  background-size:cover;
   color: #444444;
 }
@@ -229,7 +229,7 @@ h6 {
   border: none;
   border-radius: 5px;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(149, 199, 255);
   border: 1px solid black;
   padding: 40px 0px;
   color: black !important;

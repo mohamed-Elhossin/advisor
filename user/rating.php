@@ -7,20 +7,18 @@ include './sharedFunc/func.php';
 $select = "SELECT * FROM `courses`";
 $s = mysqli_query($conn, $select);
 
-
-
-if(isset($_POST['pay'])) {
+if (isset($_POST['pay'])) {
     $course = $_POST['course'];
     $rating = $_POST['rating'];
-    $userId =  $_SESSION['adminId'];
+    $userId = $_SESSION['adminId'];
 
     $insert = "INSERT INTO `rating` VALUES (NULL  ,$userId ,$course ,$rating )";
-    $i =  mysqli_query($conn, $insert);
+    $i = mysqli_query($conn, $insert);
     testMessage($i, "Thank for Your FeedBack");
 }
-if(isset($_SESSION['admin'])){
+if (isset($_SESSION['admin'])) {
 
-}else{
+} else {
     header("location:/barber/user/pages-login.php");
 }
 ?>
@@ -38,23 +36,24 @@ if(isset($_SESSION['admin'])){
                         <form method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label> Course Title </label>
-                                <?php foreach ($s as $data) { ?>
-                                    <select name="course" type="text" class="form-control">
+                                <select name="course" type="text" class="form-control">
+                                <?php foreach ($s as $data) {?>
                                         <option value="<?php echo $data['id'] ?>"> <?php echo $data['name'] ?></option>
-                                    </select>
-                                <?php } ?>
+                                <?php }?>
+                                </select>
+
                             </div>
                             <div class="form-group mt-4">
                                 <label> Course Rating from 10 </label>
                                 <select name="rating" type="text" class="form-control">
-                                    <?php for ($i = 0; $i <= 10; $i++) { ?>
+                                    <?php for ($i = 0; $i <= 10; $i++) {?>
                                         <option value="<?php echo $i ?>"> <?php echo $i ?></option>
-                                    <?php } ?>
+                                    <?php }?>
                                 </select>
 
                             </div>
 
-                            <button name="pay" class="btn mt-3 btn-info btn-block w-50 mx-auto"> pay now </button>
+                            <button name="pay" class="btn mt-3 btn-info btn-block w-50 mx-auto"> send Rating </button>
                         </form>
 
                     </div>

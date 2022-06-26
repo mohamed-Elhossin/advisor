@@ -9,7 +9,6 @@ if (isset($_GET['show'])) {
     $s = mysqli_query($conn, $select);
 }
 
-
 if (isset($_SESSION['admin'])) {
 } else {
     header("location:/advisor/user/pages-login.php");
@@ -22,18 +21,22 @@ if (isset($_SESSION['admin'])) {
         <header class="section-header">
             <h3>Courses</h3>
         </header>
+        <div class="form-control bg-primary">
+            <label for=""> Search</label>
+            <input id="myInput" type="text" class="form-control" placeholder="Search about Your Course">
+        </div>
         <div class="row flex-items-xs-middle flex-items-xs-center">
             <!-- Basic Plan  -->
-            <?php foreach ($s as $data) { ?>
+            <?php foreach ($s as $data) {?>
                 <div class="col-xs-12 col-lg-4 ">
-                    <div class="card  bg-dark mt-5">
-                        <img height="300" src="/advisor/admin/courses/upload/<?php echo $data['image'] ?>" class="img-top" alt="Eror">
-                        <div class="card-header">
-                        </div>
+                    <div id="myTable" class="card  bg-dark mt-5">
                         <div class="card-block">
+                        <img height="300" src="/advisor/admin/courses/upload/<?php echo $data['image'] ?>" class="img-top" alt="Eror">
+
                             <h4 class="card-title text-info">
                                 Title: <?php echo $data['name'] ?>
                             </h4>
+                            
                             <p>
                                 You Can view Course : <a href="<?php echo $data['link'] ?>"> Click Here</a>
                             </p>
@@ -48,7 +51,7 @@ if (isset($_SESSION['admin'])) {
                     </div>
                 </div>
 
-            <?php } ?>
+            <?php }?>
         </div>
     </div>
 
