@@ -62,7 +62,7 @@ if (isset($_GET['edit'])) {
                                 <input required class="form-control" value="<?php echo $name ?>" name="name" type="text">
                             </div>
                             <div class="form-group">
-                                <label> Desciption : </label>
+                                <label> Job Requirement : </label>
                                 <input required class="form-control" value="<?php echo $desciption ?>" name="desciption" type="text">
                             </div>
                             <?php if ($update) : ?>

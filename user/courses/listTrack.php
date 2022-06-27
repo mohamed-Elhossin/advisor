@@ -28,7 +28,7 @@ if (isset($_SESSION['admin'])) {
                                 </a>
                             </h4>
                             <p>
-                                Descripation :
+                            Job Requirement  :
 
                                 <?php echo $data['desciption'] ?>
                             </p>
